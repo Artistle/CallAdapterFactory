@@ -17,9 +17,7 @@ class MainViewModel: BaseViewModel() {
         .create(ApiClass::class.java)
 
     fun load() = launch {
-        var r = retrofit.getTest()
-        var e = ""
-        var w = ""
+        retrofit.getTest()
     }
 
 }
