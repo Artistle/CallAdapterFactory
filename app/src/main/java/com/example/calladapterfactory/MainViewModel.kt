@@ -1,6 +1,8 @@
 package com.example.calladapterfactory
 
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -17,6 +19,7 @@ class MainViewModel: BaseViewModel() {
     fun load() = launch {
         var r = retrofit.getTest()
         var e = ""
+        var w = ""
     }
 
 }

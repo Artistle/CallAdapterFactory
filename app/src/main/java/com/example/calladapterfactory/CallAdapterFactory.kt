@@ -62,7 +62,6 @@ class CallAdapterFactory(private val executor: Executor) : CallAdapter.Factory()
 
                         if (response.isSuccessful) {
 
-                            var y: Map<String, Any> = mapOf()
                             val resp = response.body().toString()
 
                             if (resp.contains("code=0")) {

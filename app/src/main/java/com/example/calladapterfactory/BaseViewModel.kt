@@ -15,5 +15,5 @@ open class BaseViewModel: ViewModel(), CoroutineScope {
         var error = throwable.message
     }
 
-    override val coroutineContext: CoroutineContext = scopeJob + Dispatchers.Main + errorHandler
+    override val coroutineContext: CoroutineContext = scopeJob + Dispatchers.IO + errorHandler
 }
